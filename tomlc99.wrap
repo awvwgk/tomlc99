@@ -1,0 +1,4 @@
+[wrap-git]
+directory = tomlc99
+url = "https://github.com/awvwgk/tomlc99.git"
+revision = meson-wrap
