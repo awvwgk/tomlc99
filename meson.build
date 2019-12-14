@@ -1,6 +1,6 @@
 project('tomlc99', 'c')
 
-tomlc99_inc = include_directories(meson.current_source_dir())
+tomlc99_inc = include_directories('.')
 tomlc99_lib = library(meson.project_name(), 'toml.c', install: true)
 tomlc99_dep = declare_dependency(link_with: tomlc99_lib,
                                  include_directories: tomlc99_inc)
