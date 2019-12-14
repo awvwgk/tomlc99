@@ -9,4 +9,6 @@ jobs:
     - run: make
     - run: make -C unittest && ./unittest/t1
     - uses: actions/setup-go@v1
-    - run: cd test1 && ./build.sh && ./run.sh && cd -
+    - run: cd test1 && bash ./build.sh && bash ./run.sh && cd -
+    - run: wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && export PATH=$PATH:$PWD
+    - run: cd test2 && bash ./build.sh && bash ./run.sh && cd -
