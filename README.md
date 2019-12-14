@@ -1,6 +1,7 @@
 # tomlc99
 TOML in c99; v0.5.0 compliant.
 
+[![Build Status](https://github.com/awvwgk/tomlc99/workflows/CI/badge.svg)](https://github.com/awvwgk/tomlc99/actions)
 
 # Usage
 

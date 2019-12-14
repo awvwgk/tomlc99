@@ -1,0 +1,12 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  linux-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: make
+    - run: make -C unittest && ./unittest/t1
+    - uses: actions/setup-go@v1
+    - run: cd test1 && ./build.sh && ./run.sh && cd -
